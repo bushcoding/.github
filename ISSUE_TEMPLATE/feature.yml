@@ -1,0 +1,39 @@
+name: Proponer una mejora
+description: Una función nueva o un cambio en algo que ya existe.
+title: "[Mejora] "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: producto
+    attributes:
+      label: Producto
+      options:
+        - Stash
+        - Aptly
+        - Classify
+        - Germina
+        - bushcoding.com
+        - Otro
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema
+      description: Qué necesidad o molestia resuelve esto.
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Propuesta
+      description: Cómo te imaginás la solución.
+    validations:
+      required: true
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas
+      description: Otras opciones que consideraste, o cómo lo resolvés hoy.
+    validations:
+      required: false
